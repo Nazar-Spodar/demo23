@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p th:text="'Hello, ' + ${name} + '!'"/>
+<p th:text="'Hello, ' + ${age} + '!'"/>
+
+
+<p th:text="'Hello, ' + ${user?.getFirstName()} + '!'"/>
+<p th:text="'Hello, ' + ${user?.getLastName()} + '!'"/>
+<p th:text="'Hello, ' + ${user?.getAge()} + '!'"/>
+<p th:text="'Hello, ' + ${user?.getEmail()} + '!'"/>
+<p th:text="'Hello, ' + ${user?.getPassword()} + '!'"/>
+
+
+
+<a href="/register"> go to register page </a>
+
+
+</body>
+</html>
